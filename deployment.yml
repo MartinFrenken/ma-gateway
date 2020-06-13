@@ -1,0 +1,26 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: ma-gateway
+spec:
+  replicas: 1
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  minReadySeconds: 5
+  template:
+    metadata:
+      labels:
+        app: ma-gateway
+    spec:
+      containers:
+      - name: ma-gateway
+        image: eu.gcr.io/sixth-spot-273818/ma-gateway
+        ports:
+        - containerPort: 1231
+        resources:
+          requests:
+            cpu: 100m
+          limits:
+            cpu: 100m              
