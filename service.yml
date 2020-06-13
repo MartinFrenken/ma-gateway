@@ -19,6 +19,6 @@ metadata:
 spec:
   ports:
     - port: 1232
-      targetPort: 1231
+      targetPort: 1232
   selector:
     app: hello-world

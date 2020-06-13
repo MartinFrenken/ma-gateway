@@ -18,7 +18,7 @@ spec:
       - name: ma-gateway
         image: eu.gcr.io/sixth-spot-273818/ma-gateway
         ports:
-        - containerPort: 1231
+        - containerPort: 1232
         resources:
           requests:
             cpu: 100m
