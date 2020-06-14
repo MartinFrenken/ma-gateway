@@ -66,7 +66,7 @@ namespace APIGW
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
             
             app.UseCors(b => b
-                .WithOrigins("http://localhost:3000")
+                .WithOrigins("http://localhost:3000", "http://34.120.173.114/")
                 .AllowAnyMethod()
                 .AllowAnyHeader());
             app.UseOcelot().Wait();
