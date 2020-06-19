@@ -9,7 +9,7 @@
           "Port": 9000
         }
       ],
-      "UpstreamPathTemplate": "gateway/review-api/{everything}",
+      "UpstreamPathTemplate": "/gateway/review-api/{everything}",
       "UpstreamHttpMethod": [ "POST", "PUT", "GET", "DELETE" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "TestKey",
@@ -25,7 +25,7 @@
           "Port": 4000
         }
       ],
-      "UpstreamPathTemplate": "gateway/movie/api/{everything}",
+      "UpstreamPathTemplate": "/gateway/movie/api/{everything}",
       "UpstreamHttpMethod": [ "POST", "PUT", "GET", "DELETE" ],
     }
 
