@@ -5,7 +5,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "review-service",
           "Port": 9000
         }
       ],
@@ -21,7 +21,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "ma-movie-service",
           "Port": 4000
         }
       ],
@@ -31,7 +31,7 @@
 
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "https://localhost:1231/portal"
+    "BaseUrl": "https://"
   },
   "Logging": {
     "LogLevel": {

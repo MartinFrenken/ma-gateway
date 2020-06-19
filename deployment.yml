@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: ma-gateway
-        image: eu.gcr.io/sixth-spot-273818/ma-gateway
+        image: eu.gcr.io/sixth-spot-273818/IMAGE:TAG
         ports:
         - containerPort: 1232
         resources:
