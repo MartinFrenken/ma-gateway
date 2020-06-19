@@ -7,9 +7,13 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace APIGW.controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class DefaultController : ControllerBase
+    [Route("/")]
+    public class IndexController : Controller
     {
+        // Used to give healthy status back to ingress
+        public String Index()
+        {
+            return "healthy";
+        }
     }
 }
